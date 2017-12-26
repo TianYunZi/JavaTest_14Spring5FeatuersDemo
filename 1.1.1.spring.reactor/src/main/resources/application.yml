@@ -1,0 +1,6 @@
+server:
+  port: 8080
+spring: # DATA REST (RepositoryRestProperties)
+  data:
+    rest:
+      base-path: /api
