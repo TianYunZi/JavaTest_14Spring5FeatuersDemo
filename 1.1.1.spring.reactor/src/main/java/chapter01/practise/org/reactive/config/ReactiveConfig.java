@@ -4,6 +4,7 @@ import chapter01.practise.org.reactive.model.Restaurant;
 import chapter01.practise.org.reactive.repositories.RestaurantRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 import org.springframework.web.reactive.config.EnableWebFlux;
@@ -15,6 +16,7 @@ import java.util.stream.IntStream;
 @Configuration
 @EnableWebFlux
 @EnableReactiveMongoRepositories
+@ComponentScan("chapter01.practise.org.reactive")
 public class ReactiveConfig implements WebFluxConfigurer {
 
     @Bean
